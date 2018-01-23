@@ -32,17 +32,18 @@
 
 | 編號 | 資料型態 | 說明 | avr-gcc 中型態 |
 | :-- | :-- | :-- | :-- |
-|  1  | int8    | 8  bit 整數型態   | int8_t , char |
-|  2  | int16   | 16 bit 整數型態   | int16_t , int |
-|  3  | int32   | 32 bit 整數型態   | int32_t , long int|
-|  4  | int64   | 64 bit 整數型態   | int64_t |
-|  5  | uint8   | 8  bit 正整數型態 | int8_t , unsigned char |
-|  6  | uint16  | 16 bit 正整數型態 | int16_t , unsigned int |
-|  7  | uint32  | 32 bit 正整數型態 | int32_t , unsigned long int |
-|  8  | uint64  | 64 bit 正整數型態 | int63_t |
-|  9  | float32 | 32 bit 浮點數型態 | float |
-| 10  | float64 | 64 bit 浮點數型態 | 無 |
+|  0  | int8    | 8  bit 整數型態   | int8_t , char |
+|  1  | int16   | 16 bit 整數型態   | int16_t , int |
+|  2  | int32   | 32 bit 整數型態   | int32_t , long int|
+|  3  | int64   | 64 bit 整數型態   | int64_t |
+|  4  | uint8   | 8  bit 正整數型態 | int8_t , unsigned char |
+|  5  | uint16  | 16 bit 正整數型態 | int16_t , unsigned int |
+|  6  | uint32  | 32 bit 正整數型態 | int32_t , unsigned long int |
+|  7  | uint64  | 64 bit 正整數型態 | int63_t |
+|  8  | float32 | 32 bit 浮點數型態 | float |
+|  9  | float64 | 64 bit 浮點數型態 | 無 |
 
+** (NOTE:AVR-GCC中double與float同為單精度浮點數、為32bit) **
 
 ### M128_HMI_Form_put()
 - 呼叫介面：  
