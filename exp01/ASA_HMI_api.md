@@ -49,7 +49,7 @@
 - 呼叫介面：  
   ` char M128_HMIForm_put(char *FormatString, char Bytes, void *Data_p) `
 - 簡介：  
-  呼叫函式可以將存放於指標*Data_p所指記憶體內FormatString指定不同形態及筆數組成之資料結構內容透過UART0送向人機。
+  呼叫函式可以將存放於指標*Data_p所指記憶體內FormatString指定不同形態及筆數組成之結構內容透過UART0送向人機。
 - 變數：
  - FormatString : 由資料代碼及筆數所組成之字串，其中每一欄位，代表資料型態，由Type 資料型態對應表中的代碼表示，後接英文字母"x"及一個數字代表筆數。各欄間以","隔開。
  - Bytes ：  欲送出資料總位元大小。
@@ -62,7 +62,7 @@
 - 呼叫介面：  
   ` char M128_HMIForm_get( char *FormatString, char Bytes void *Data_p) `
 - 簡介：  
-  呼叫函式可以將存放於指標*Data_p所指記憶體內FormatString指定不同形態及筆數組成之資料結構內容透過UART0送向人機。
+  呼叫函式可以將存放於指標*Data_p所指記憶體內FormatString指定不同形態及筆數組成之結構內容透過UART0送向人機。
 - 變數：
  - FormatString : 由資料代碼及筆數所組成之字串，其中每一欄位，代表資料型態，由Type 資料型態對應表中的代碼表示，後接英文字母"x"及一個數字代表筆數。各欄間以","隔開。
  - Bytes : 欲送出資料總位元大小。
