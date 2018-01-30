@@ -3,8 +3,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 可參考專案連結 https://github.com/mickey9910326/OM6021examples
-<!-- NOTE -->
-<!-- 可搭配影片  待補 -->
+可搭配影片 https://youtu.be/RS2tvxid5B0
 
 ### ASA單板電腦端成程式
 ``` c
