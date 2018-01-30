@@ -3,9 +3,9 @@
 * [實驗一](exp01\intro.md)
     * [背景知識 I 機電介面](exp01\knowage.md)
     * [背景知識 II MATLAB](exp01\knowage2.md)
-    * [ASA_HMI API](exp01\ASA_HMI_api.md)
-    * [ASA 文字人機](exp01\ASA_HMI_data_agent.md)
-    * [Matlab 文字人機巨集函式](exp01\MATLAB_REMO.md)
+    * [ASA 人機通訊函式](exp01\ASA_HMI_api.md)
+    * [ASA 人機通訊軟體](exp01\ASA_HMI_data_agent.md)
+    * [Matlab 人機通訊函式](exp01\MATLAB_REMO.md)
         * [簡介](exp01\MATLAB_REMO.md)
         * [REMO_open](exp01\MATLAB_REMO.md#remoopen)
         * [REMO_close](exp01\MATLAB_REMO.md#remoclose)
@@ -16,4 +16,3 @@
     * [C語言Struct、Matlab Structure使用(待補)]()
     * [範例程式(待補)]()
     * [實驗步驟/程式](exp01\experiment.md)
-    
