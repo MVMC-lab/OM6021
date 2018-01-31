@@ -20,7 +20,7 @@
     * [範例程式4](exp01\example4.md)
     * [實驗步驟/程式](exp01\experiment.md)
 
-* [實驗二](exp01\intro.md)
+* [實驗二](exp02\intro.md)
   * [背景知識 I DAC](exp02\knowage.md)
   * [背景知識 II SDC](exp02\knowage2.md)
   * [ASA-DAC API](exp02\ASA_DAC_api.md)
