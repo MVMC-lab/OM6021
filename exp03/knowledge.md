@@ -16,7 +16,7 @@
 
 
 $$
-正規畫頻率(Cycle/Sample) = 頻率(Cycle/Second)/取樣頻率(Sample/Second)
+\text{正規化頻率}(Cycle/Sample) = \text{頻率} (Cycle/Second)/ \text{取樣頻率}(Sample/Second)
 $$
 
 
@@ -32,7 +32,7 @@ $$
 
 取樣除了會使高低頻訊號混雜加成之外，也會使原來週期性的訊號不能維持原週期，甚至變為非週期性：
 
-弦波訊號 $$sin(t+kT)=sin(t) 、K 
+弦波訊號 $$sin(t+kT)=sin(t) 、K
 \in N$$
 
 
@@ -106,4 +106,3 @@ $$
 以三BITS，動態範圍$$\pm 10V$$的ADC/DAC為例，$$SBC=b010=2$$對應電壓$$V=((int)SBC-2^{b-1})\times V_{fr}/2^b = \frac{(4-2^2)\times 20}{2^3} = 0 V$$
 
 ，$$SBC=b010=2$$對應電壓$$V=\frac{(2-2^2) \times 20}{2^3} = -2 \times 2.5 = -5 V$$，完全吻合特性曲線所示。上述的特性曲線均是理想化的曲線，實際的電路由於電路製作上不可能會百分之百無誤。
-
