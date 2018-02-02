@@ -38,7 +38,7 @@ $$
 
 經由$$T_s$$取樣週期取樣後會變成弦波數列$$sin(n)=sin(t)|_{t=nT_s} $$
 
-若存在整數$$m$$使得$$m T_s =k T $$則弦波數列$$sin(n)$$為週期性數列，因為$$$$$$sin(n+m)=sin(t)|_{t=(n+m)T_s} =sin(t)|_{t=nT_s+mT_s} =sin(t)|_{t=nT_s+kT}=sin(t-kT)|_{t=nT_s+kT}=sin(t)|_{t=nT_s}=sin( n )$$
+若存在整數$$m$$使得$$m T_s =k T $$則弦波數列$$sin(n)$$為週期性數列，因為$$sin(n+m)=sin(t)|_{t=(n+m)T_s} =sin(t)|_{t=nT_s+mT_s} =sin(t)|_{t=nT_s+kT}=sin(t-kT)|_{t=nT_s+kT}=sin(t)|_{t=nT_s}=sin( n )$$
 
 若$$m T_s =k T $$的$$m$$非為整數，
 
