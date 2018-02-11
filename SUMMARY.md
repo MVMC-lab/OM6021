@@ -29,3 +29,4 @@
 * [實驗三](exp03\intro.md)
     * [背景知識 I 數位與離散](exp03\knowledge.md)
     * [背景知識 II ADC介紹](exp03\knowledge2.md)
+    * [M128 ADC使用](exp03\ASA_ADC_api.md)
