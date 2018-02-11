@@ -232,7 +232,8 @@ ADC驅動函式介面
 - 呼叫介面：  
   ` char M128_ADC_get(char LSByte,char Bytes,void *Data_p); `
 - 簡介：呼叫本函式可讀取ADC轉換結果，並依據10bit/8BIT設定及單極性/差動的預設，轉換格式。將會把結果轉換成二補數形式。
-- 參數：
+- 參數：  
+
 |      | LSByte | Bytes | *Data_p 之byte數 |
 | :--- | :--    | :--   | :--         |
 | 8 bit| 101    | 1     | 1 |
@@ -242,10 +243,10 @@ ADC驅動函式介面
     - 1：錯誤：不支援參數所選設定。
     - 2：警告：ADC 位元組數設定與讀取不吻合。
 
-##### 資料後處理公式：由ADC讀值計算輸入電壓或壓差。
-    單極：$$ V_{in} = \frac{ V_{ref} \times ADC }{ 2^n} $$ 其中n為位元數8或10。
-
-    差動：$$ V_{pos} - V_{neg} = \frac{ V_{ref} \times ADC }{ GAIN \times 2^n} $$
+##### 資料後處理公式：
+由ADC讀值計算輸入電壓或壓差。  
+單極：$$ V_{in} = \frac{ V_{ref} \times ADC }{ 2^n} $$ 其中n為位元數8或10。  
+差動：$$ V_{pos} - V_{neg} = \frac{ V_{ref} \times ADC }{ GAIN \times 2^n} $$  
 
 #### M128_ADC_fgt
 - 呼叫介面：  
