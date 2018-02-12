@@ -64,9 +64,9 @@
   1. 依線路圖接線。
   2. 兩輸入端短路接地，量取輸入震幅為零之$$E_O(0)$$。
   3. 兩輸入端共同接至產波器，產波器產生50Hz，震幅1之弦波。量取$$E_O(1)$$振幅。
-  4. 推算共模免疫比(CMRR)。 參考電路圖$$E_O$$依DUT正極虛短路輸入電流為0，可推算出$$v_{offset}} = E_O\frac{100}{100K+100} =\frac{E_O}{1001}$$。  
-  $$\Delta v_{offset}} = \frac{E_e(1)-E_e(0)}{1001} $$  
-  由於在OP的頻寬範圍內，$$E_i=0V$$強制$$v_{out}(1)=v_{out}(0)=0$$，$$\Delta v_{out}= 0 = \Delta v_{com} G_{com} + \Delta v_{offset} G_{diff}}=0$$，$$CMRR
+  4. 推算共模免疫比(CMRR)。 參考電路圖$$E_O$$依DUT正極虛短路輸入電流為0，可推算出$$v_{offset} = E_O\frac{100}{100K+100} =\frac{E_O}{1001}$$。  
+  $$\Delta v_{offset} = \frac{E_e(1)-E_e(0)}{1001} $$  
+  由於在OP的頻寬範圍內，$$E_i=0V$$強制$$v_{out}(1)=v_{out}(0)=0$$，$$\Delta v_{out}= 0 = \Delta v_{com} G_{com} + \Delta v_{offset} G_{diff} =0$$，$$CMRR
   = \frac{G_{diff}}{G_{com}}
   = \frac{\Delta v_{com}}{\Delta v_{offset}}
   = 1001 \frac{\Delta v_{offset}}{\Delta E_O} $$  
