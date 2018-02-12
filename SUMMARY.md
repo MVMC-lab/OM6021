@@ -31,3 +31,8 @@
     * [背景知識 II ADC介紹](exp03\knowledge2.md)
     * [M128 ADC使用](exp03\ASA_ADC_api.md)
     * [實驗步驟/程式](exp03\experiment.md)
+
+* [實驗四](exp04\intro.md)
+    * [背景知識](exp04\knowledge.md)
+    * [M128 PWM使用](exp04\ASA_PWM_api.md)
+    * [實驗步驟/程式](exp04\experiment.md)
