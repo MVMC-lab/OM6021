@@ -8,9 +8,9 @@
 
 類比濾波器通常以頻率選擇為目的，參考圖5-11頻率選擇濾波器以對通過濾波器的高低頻訊號增益高低來篩選不同頻率的訊號，可分為低通濾波器(Low-pass filter)，高通濾波器(Hi-pass filter)，帶通(Band-pass filter)，以及帶止(Band-stop filter)。  
 
-圖中虛線為理想頻率響應曲線，實現為實際響應曲線示意圖。增益為0頻率增益(DC增益)0.7倍的頻率為截止頻率 $$ f_{3dB} = f_{cuto ff} $$ ，其功率增益為1/2，即3dB。高低通濾波器截止頻率到0頻率間稱為頻寬BW $$ \Dleta f_{3dB} $$ ?，帶止帶通則是雙邊截止頻率差為頻寬BW $$ \Dleta f_{3dB} $$ ，雙邊載止頻率中值為中心頻率。
+圖中虛線為理想頻率響應曲線，實現為實際響應曲線示意圖。增益為0頻率增益(DC增益)0.7倍的頻率為截止頻率 $$ f_{3dB} = f_{cuto ff} $$ ，其功率增益為1/2，即3dB。高低通濾波器截止頻率到0頻率間稱為頻寬BW $$ \Delta f_{3dB} $$ ?，帶止帶通則是雙邊截止頻率差為頻寬BW $$ \Delta f_{3dB} $$ ，雙邊載止頻率中值為中心頻率。
 
-濾波器的品質因子Quality Factor Q，定義為 $$ Q = \frac{ E_{\text{stored}} }{ E_{\text{Lost per cycle}} } $$ ，即己貯能量為每次震盪循環損失能量的倍數，值愈大表示共震效果愈強。在頻域上可以推導出符合公式 $$ Q = \frac{f_{central}}{ \Dleta f_{3dB} } $$ ，其中 $$ f_{central} $$ 為共震頻率中心頻率，而 $$ \Dleta f_{3dB} $$ 為能量減半頻寬，亦即 $$ f_{central} - 0.5 \Dleta f_{3dB} =  f_{3dB1}  $$ 、 $$ f_{central} + 0.5 \Dleta f_{3dB} =  f_{3dB3}  $$
+濾波器的品質因子Quality Factor Q，定義為 $$ Q = \frac{ E_{\text{stored}} }{ E_{\text{Lost per cycle}} } $$ ，即己貯能量為每次震盪循環損失能量的倍數，值愈大表示共震效果愈強。在頻域上可以推導出符合公式 $$ Q = \frac{f_{central}}{ \Delta f_{3dB} } $$ ，其中 $$ f_{central} $$ 為共震頻率中心頻率，而 $$ \Delta f_{3dB} $$ 為能量減半頻寬，亦即 $$ f_{central} - 0.5 \Delta f_{3dB} =  f_{3dB1}  $$ 、 $$ f_{central} + 0.5 \Delta f_{3dB} =  f_{3dB3}  $$
 
 ![頻率篩選濾波器](./img/5-11.png)  
 圖5-11 頻率篩選濾波器
