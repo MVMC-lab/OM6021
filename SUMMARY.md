@@ -38,4 +38,5 @@
     * [實驗步驟/程式](exp04\experiment.md)
 
 * [實驗五](exp05\intro.md)
-    * [背景知識](exp05\knowledge.md)
+    * [背景知識 I  運算放大器](exp05\knowledge.md)
+    * [背景知識 II 濾波器](exp05\knowledge2.md)
