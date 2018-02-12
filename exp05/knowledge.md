@@ -22,14 +22,11 @@
 ### 回饋控制及運算放大器Operation Amplifier OP AMP
 
 運算放大器是實現回饋控制類比電路的核心元件，運算放大器在類比電路中的地位就如同CPU在數位電路中。而回饋控制則是類比電路用以克服製造誤差達成高精密度的最重要理論基礎。假設圖5左邊所示為一個系統，其誤差E受到輸入$$X$$，系統特性$$G(s)$$，以及環境雜訊$$n$$影響共同決定$$E=G(s)X+n$$。當這個誤差被用高增益負回饋進入輸入如圖5-2右邊所示。則由於加入了回饋的關係式，可以推導出如下的結果。
-$$
-E = G(s) X - G(s) K_p E + n \newline
 
-( 1 + G(s) K_p ) E = G X + n \newline
-
-E = \frac{ G(s) }{ 1 + G(s) K_p } X + \frac{ 1 }{ 1 +G(s) K_p } n
-\approx 0 \text{，} as  K_p \approx \infty
-$$
+$$ E = G(s) X - G(s) K_p E + n $$  
+$$ ( 1 + G(s) K_p ) E = G X + n $$  
+$$ E = \frac{ G(s) }{ 1 + G(s) K_p } X + \frac{ 1 }{ 1 +G(s) K_p } n
+\approx 0 \text{，} as  K_p \approx \infty $$  
 
 
 由於$$K_p$$會出現在式子中的分母，當他很大時，不論雜訊大小，以及系統特 性如何均會讓誤差逼近於0，
