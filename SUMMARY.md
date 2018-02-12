@@ -34,5 +34,5 @@
 
 * [實驗四](exp04\intro.md)
     * [背景知識](exp04\knowledge.md)
-    * [M128 ADC使用](exp04\ASA_ADC_api.md)
+    * [M128 PWM使用](exp04\ASA_PWM_api.md)
     * [實驗步驟/程式](exp04\experiment.md)
