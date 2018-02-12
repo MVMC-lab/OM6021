@@ -26,7 +26,7 @@
 $$ E = G(s) X - G(s) K_p E + n $$  
 $$ ( 1 + G(s) K_p ) E = G X + n $$  
 $$ E = \frac{ G(s) }{ 1 + G(s) K_p } X + \frac{ 1 }{ 1 +G(s) K_p } n
-\approx 0 \text{，} as  K_p \approx \infty $$  
+\approx 0 , as  K_p \approx \infty $$  
 
 
 由於$$K_p$$會出現在式子中的分母，當他很大時，不論雜訊大小，以及系統特 性如何均會讓誤差逼近於0，
@@ -102,7 +102,7 @@ $$I_{n+}$$、$$I_{n-}$$ 則為溫度及高頻干擾等各種因素所造成的�
 
 圖5-7 非反向放大器圖
 
-由於 $$ v_{+-}=0 \text{、} v_-=v_+=v_{in} \Rightarrow i_1= \frac{ (0-v_{in}) }{R_1} $$  
+由於 $$ v_{+-}=0 , v_-=v_+=v_{in} \Rightarrow i_1= \frac{ (0-v_{in}) }{R_1} $$  
 但 $$ i_- = 0 \Rightarrow i_2=i_1=- \frac{v_{in} }{R_1} $$  
 $$ \Rightarrow v_{in} - v_{out} = R_2 i_2 = -v_{in} \frac{R_2}{R_1} $$  
 $$ \Rightarrow v_{out} = ( 1 + \frac{R_2}{R_1} ) v_{in} $$  
