@@ -19,7 +19,7 @@
   = \frac{ E_O(10)-E_O(-10) }{1001}
   = \frac{ \Delta E_O}{1001}  $$  
   5. 因此開路增益 $$ A_{OL}
-  = \frac{\Dleta V_{out}}{\Dleta V_{in}}
+  = \frac{\Delta V_{out}}{\Delta V_{in}}
   = \frac{ 20 \times 1001 }{ \Delta E_O } $$  
 
 ### 2.增益頻寬積(Gain-Bandwidth Product)GBW實測
