@@ -7,9 +7,14 @@
 ### 參考文獻
 1. 網頁維基百科關於C言語 http://en.wikipedia.org/wiki/C(programming_language)
 2. C語言學習筆記網頁 http://openhome.cc/Gossip/CGossip/
+3. C語言結構簡介 https://openhome.cc/Gossip/CGossip/StructABC.html
 
 ### 設備與材料
 1. PC電腦
-2. AVR Studio AVR C開發免費軟體。
-3. WinAVR AVR C開發免費軟體。
-4. HAPSIM AVR週邊硬體模擬免費軟體。
+2. ASA_M128
+
+### 所需軟體
+1. AVR Studio：AVR C的免費開發軟體。
+2. WinAVR-gcc：AVR C的編譯器。
+3. ASA_HMI_Data_Agent：https://github.com/mickey9910326/ASA_HMI_Data_Agent
+3. ASA_HMI matlab函示：https://github.com/MVMC-lab/ASA_HMI_MATLAB
