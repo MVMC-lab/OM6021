@@ -1,37 +1,42 @@
 ## Matlab 文字人機函式
 - - -
+
+下載位置：https://github.com/MVMC-lab/ASA_HMI_MATLAB/releases
+下載其中的 ASA_HMI_MATLAB.zip
+解壓縮到工作目錄底下，即可使用MATLAB當作函式呼叫。  
+
 開發一個量測儀器，或控制器的程序中，常會以Matlab來開發並利用模擬訊號及模擬系統來測試演算法，測試中需要有許多的模擬訊號，以及模擬結果的數據繪圖，以協助開發者研判演算法的效果。
 
-在完成演算法模擬測試之後，必需將演算法轉成C語言程式，編譯燒錄到單板電腦中，才能夠直接感測真實數據，控制真實系統。其中真實數據的後處理及繪圖，以及測試訊號的產生，仍然以在Matlab內做處理較為方便，因為Matlab的分析繪圖及後處理演算法資源非常豐富。為了使用Matlab的資源協助，測試移殖到ASA單板電腦的控制，處理，與資料擷取的程式效能，讓Matlab與ASA單板電腦可以輕鬆交換大批資料，將可促進研究開的進度，提高效率。  
+在完成演算法模擬測試之後，必需將演算法轉成C語言程式，編譯燒錄到單板電腦中，才能夠直接感測真實數據，控制真實系統。其中真實數據的後處理及繪圖，以及測試訊號的產生，仍然以在Matlab內做處理較為方便，因為Matlab的分析繪圖及後處理演算法資源非常豐富。為了使用Matlab的資源協助，測試移殖到ASA單板電腦的控制，處理，與資料擷取的程式效能，讓Matlab與ASA單板電腦可以輕鬆交換大批資料，將可促進研究開的進度，提高效率。
 
 雖然文字人機，能夠與ASA單板交換矩陣及結構內容，再經存取檔案，間接使Matlab與ASA單板交換實驗量測數據，以及模擬測試訊號。
 
 為了能夠在Matlab內即可以直接與ASA單板電腦進行大批實測及模擬數據。ASA開發團隊提供了Matlab人機通訊函式庫。函式庫提供了包括：可用於開啟關閉UART通訊的，REMO_open(), REMO_close()、可用與ASA單板電腦協調對話的scanf(),printf()、用於與ASA單板交換矩陣內容的 REMO_put(), REMO_get()、以及用於與ASA單板交換結構內容的 REMO_Form_put(), REMO_Form_get()。 由以下Matlab人機函式與ASA人機函式對應功能方塊圖所顯示。
 
-![功能方塊圖](./img/remo.png)  
+![功能方塊圖](./img/remo.png)
 
-- Matlab的scanf()、ASA單板的printf()：  
+- Matlab的scanf()、ASA單板的printf()：
     可呼叫Matlab的scanf()，以等待ASA單板printf()送來之新訊息。
 
-- ASA單板的scanf()、Matlab的printf()：  
+- ASA單板的scanf()、Matlab的printf()：
     可呼叫ASA單板的scanf()，以等待MATLAB的printf()送來之新訊息。
 
-- Matlab的REMO_get()、ASA單板的M128_HMI_put()：  
+- Matlab的REMO_get()、ASA單板的M128_HMI_put()：
     可呼叫Matlab的REMO_get()，以等待ASA單板M128_HMI_put()送來之新訊息。
 
-- ASA單板的M128_HMI_get()、Matlab的REMO_put()：  
+- ASA單板的M128_HMI_get()、Matlab的REMO_put()：
 可呼叫ASA單板的M128_HMI_get()，以等待MATLAB的REMO_put()送來之新訊息。
 
-- Matlab的REMO_Form_get()、ASA單板的M128_HMI_Form_put()：  
+- Matlab的REMO_Form_get()、ASA單板的M128_HMI_Form_put()：
     可呼叫Matlab的REMO_Form_get()，以等待ASA單板M128_HMI_Form_put()送來之新訊息。
 
-- ASA單板的M128_HMI_Form_get()、Matlab的REMO_Form_put()：  
+- ASA單板的M128_HMI_Form_get()、Matlab的REMO_Form_put()：
 可呼叫ASA單板的M128_HMI_Form_get()，以等待MATLAB的REMO_Form_put()送來之新訊息。
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ### REMO_open
-`[Port, error] = REMO_open( COM_number )  `  
+`[Port, error] = REMO_open( COM_number )  `
 - 簡介：呼叫本函式，開啟編號Com_number的串列通訊埠。
 - 輸入變數：
  - COM_number : PC COM PORT編號。
@@ -50,7 +55,7 @@ error % 印出 error
 ```
 
 ### REMO_close
-`[error] = REMO_close( Port )`  
+`[error] = REMO_close( Port )`
 - 簡介：呼叫本函式以關閉佔用變數集合Port之UART通訊埠。
 - 輸入變數：
  - Port : 由Port變數集合所代表之已開啟UART通訊埠。
@@ -71,7 +76,7 @@ error % 印出 error
 ```
 
 ### REMO_get
-`[Data_matrix, error] = REMO_get(Port,Type,Bytes)`  
+`[Data_matrix, error] = REMO_get(Port,Type,Bytes)`
 - 簡介：呼叫本函式由Port 指定之UART通訊埠讀回DataType 所指定型態之資料矩陣。
 - 輸入變數：
  - Port : 由Port變數集合所代表之已開啟UART通訊埠。
@@ -186,8 +191,8 @@ struct{
 ##### Data_struct
 以REMO_Form_get取得之Data_struc結構各欄位之名稱會依欄位次序命名，ex: type1,type2...
 若名稱Data_struct則
-第1欄可以`Data_struct.type1`存取。  
-第2欄可以`Data_struct.type2`存取。  
+第1欄可以`Data_struct.type1`存取。
+第2欄可以`Data_struct.type2`存取。
 當想要存值進入MATLAB結構之欄位中，必需先將常數轉換形態至吻合於欄位形態後再寫入例如
 ``` matlab
 Data_struct.type1(1) = cast(1,'int8');
@@ -199,8 +204,8 @@ Data_struct.type1(:)  = cast([1 2],'int8');
 % or
 Data_struct.type2  = cast([1 2],'int8');
 ```
-當想要取用結構特定欄之內容時，取用轉存之變數可先被宣告相符合之之形態，則取值仍維持相同形態  
-- 例子一:  
+當想要取用結構特定欄之內容時，取用轉存之變數可先被宣告相符合之之形態，則取值仍維持相同形態
+- 例子一:
 ``` matlab
 B=3;
 A=cast(B,’int8’);
@@ -209,7 +214,7 @@ A=Data_struct.f1i8(1);
 則A的內容為是char 形態表示的1。
 若取用轉存之變數未被預先宣告形態，則取值轉存中其值會被轉換為MATLAB的標準形態,亦即，雙精度浮點數。
 
-- 例子二:    
+- 例子二:
 ``` matlab
 B=3;
 B=Data_struct.f1i8(1);
