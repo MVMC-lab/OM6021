@@ -13,7 +13,7 @@
         * [REMO_put](exp01\MATLAB_REMO.md#remoput)
         * [REMOForm_get](exp01\MATLAB_REMO.md#remogormget)
         * [REMOForm_put](exp01\MATLAB_REMO.md#remoformput)
-    * [C語言Struct、Matlab Structure使用(待補)]()
+    * [C語言Struct、Matlab Structure使用](exp01\struct.md)
     * [範例程式1](exp01\example1.md)
     * [範例程式2](exp01\example2.md)
     * [範例程式3](exp01\example3.md)
