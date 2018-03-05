@@ -43,3 +43,6 @@
     * [ASA MABOR 洞洞板](exp05\ASA_MABOR_dev.md)
     * [實驗步驟/程式 運算放大器](exp05\experiment.md)
     * [實驗步驟/程式 濾波器](exp05\experiment2.md)
+* [實驗六](exp06\intro.md)
+    * [背景知識 ](exp06\knowledge.md)
+    
