@@ -25,6 +25,9 @@
   * [背景知識 II SDC](exp02\knowage2.md)
   * [ASA-DAC API](exp02\ASA_DAC_api.md)
   * [ASA-SDC API](exp02\ASA_SDC_api.md)
+  * [ASA-SDC 範例程式1](exp02\sdc_example1.md)
+  * [ASA-SDC 範例程式2](exp02\sdc_example2.md)
+  * [ASA-SDC 範例程式3](exp02\sdc_example3.md)
 
 * [實驗三](exp03\intro.md)
     * [背景知識 I 數位與離散](exp03\knowledge.md)
